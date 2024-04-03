@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Zizmu Software Solutions</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Updated: Feb 01 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const getStartedButton = document.getElementById('getStartedButton');
+  const contactForm = document.getElementById('contactForm');
+
+  // Add event listener to the button
+  getStartedButton.addEventListener('click', function () {
+      // Show the toast
+      contactForm.classList.add('show');
+  });
+
+  // Close the toast when the close button is clicked
+  contactForm.querySelector('.btn-close').addEventListener('click', function () {
+      contactForm.classList.remove('show');
+  });
+});
+  </script>
+</head>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <h1>ZIZMU</h1>
+        <!-- <span>.</span> -->
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <!-- <li><a href="index.html#portfolio">Portfolio</a></li> -->
+          <li><a href="index.html#team">Team</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <li><a href="index.html#contact">Contact</a></li>
+          <!-- <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+                <ul class="dd-box-shadow">
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+      <button id="getStartedButton" class="btn-getstarted" style="border: none;">Get Started</button>
+
+<div id="contactForm" class="toast">
+  <div class="toast-header">
+    <strong class="me-auto">Contact Us</strong>
+    <button type="button" class="btn-close" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    <form id="contactFormContent">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email ID:</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="contactNumber" class="form-label">Contact Number:</label>
+        <input type="tel" class="form-control" id="contactNumber" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color: rgba(204, 20, 127); border: none;">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- Hero Section - Home Page -->
+    <section id="hero" class="hero">
+      <img src="assets/img/hero-bg.jpg" class="hero-bg" alt="" data-aos="fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <p data-aos="fade-up" data-aos-delay="200">Welcome to</p>
+            <h2 data-aos="fade-up" data-aos-delay="400">Zizmu Software Solutions</h2>
+            <p data-aos="fade-up" data-aos-delay="500">Bringing Ideas to Reality</p>
+            <button data-aos="fade-up" data-aos-delay="500" type="submit" class="btn btn-primary" style="margin-top: 15px; background-color: rgba(204, 20, 127); border: none;"><a href="#about" class="scrollto" data-aos="fade-up" data-aos-delay="300" style="color: white;">Learn More</a></button>
+          </div>
+        </div>
+      </div>
+</section>
+
+    </section><!-- End Hero Section -->
+
+<!-- About Section - Home Page -->
+<section id="about" class="about">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Us</h2>
+    </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="200">
+    
+      <div class="row align-items-xl-center gy-5">
+          <div class="col-xl-5 content">
+              <!-- <h3>About Us</h3> -->
+              <h2>WHO WE ARE</h2>
+              <p>"Empowering Innovation, Crafting Solutions."</p>
+              <ul style="list-style: none; padding-left: 0;">
+                  <li><i class="bi bi-check2"></i> We transform ideas into reality with precision and flair.</li>
+                  <li><i class="bi bi-check2"></i> Our experienced team delivers customized solutions.</li>
+                  <li><i class="bi bi-check2"></i> We provide unparalleled service every step of the way.</li>
+              </ul>
+              <a href="about-us.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="col-xl-7">
+              <div class="row gy-4 icon-boxes">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                      <div class="icon-box">
+                          <i class="bi bi-layers"></i>
+                          <h3>Custom Solutions</h3>
+                          <p>We craft tailor-made solutions to meet your unique needs and challenges.</p>
+                      </div>
+                  </div> <!-- End Icon Box -->
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                      <div class="icon-box">
+                          <i class="bi bi-trophy"></i>
+                          <h3>Excellence</h3>
+                          <p>With a commitment to excellence, we strive to deliver exceptional results every time.</p>
+                      </div>
+                  </div> <!-- End Icon Box -->
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                      <div class="icon-box">
+                          <i class="bi bi-chat-left-quote"></i>
+                          <h3>Communication</h3>
+                          <p>Open and transparent communication is at the heart of our client relationships.</p>
+                      </div>
+                  </div> <!-- End Icon Box -->
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                      <div class="icon-box">
+                          <i class="bi bi-people"></i>
+                          <h3>Collaboration</h3>
+                          <p>We believe in working collaboratively with our clients to achieve shared success.</p>
+                      </div>
+                  </div> <!-- End Icon Box -->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- End About Section -->
+
+<!-- Services Section - Home Page -->
+<section id="services" class="services">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+<p>Discover our range of services tailored to meet your business needs and objectives.</p>
+
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
+          <div>
+            <h4 class="title">Web Application Development</h4>
+            <p class="description">Crafting user-friendly, scalable, and secure web applications to meet your business needs.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Add more service items here -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
+          <div>
+            <h4 class="title">UI/UX Design and Prototyping</h4>
+            <p class="description">Creating captivating user interfaces and engaging experiences tailored to your audience.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Add more service items here -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-android"></i></div>
+          <div>
+            <h4 class="title">Android Development</h4>
+            <p class="description">Building robust Android applications to meet the unique needs of your business and users.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Add more service items here -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+          <div>
+            <h4 class="title">Custom Solutions</h4>
+            <p class="description">Tailoring solutions to address your specific challenges and opportunities.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Add more service items here -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-gear-wide-connected"></i></div>
+          <div>
+            <h4 class="title">DevOps</h4>
+            <p class="description">Implementing DevOps practices to streamline development, deployment, and operations.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Add more service items here -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-speedometer2"></i></div>
+          <div>
+            <h4 class="title">Testing Services</h4>
+            <p class="description">Comprehensive testing services to ensure the quality and reliability of your applications.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Add more service items here -->
+
+    </div>
+  </div>
+</section>
+
+<!-- End Services Section -->
+
+      <!-- Stats Section - Home Page -->
+    <section id="stats" class="stats">
+
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="22" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+
+    
+
+    
+
+    
+
+          <!-- <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div> -->
+          <!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Stats Section -->
+
+  <!-- Team Section - Home Page -->
+  <section id="team" class="team">
+
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Team</h2>
+<p>Meet our talented team of professionals dedicated to delivering exceptional results.</p>
+
+    </div><!-- End Section Title -->
+  
+    <div class="container">
+
+      <div class="row gy-5 justify-content-center">
+  
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="member-img">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+          </div> -->
+          <div class="member-info text-center">
+            <h4>Web Development Team</h4>
+            <span><i class="bi bi-laptop fs-3"></i></span>
+            <p>Our Web Development Team consists of expert developers dedicated to creating stunning and functional websites.</p>
+          </div>
+        </div><!-- End Team Member -->
+  
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="member-img">
+            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+          </div> -->
+          <div class="member-info text-center">
+            <h4>Android Team</h4>
+            <span><i class="bi bi-phone fs-3"></i></span>
+            <p>Our Android Team comprises skilled developers who specialize in creating innovative and user-friendly mobile applications for the Android platform.</p>
+          </div>
+        </div><!-- End Team Member -->
+  
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="member-img">
+            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+          </div> -->
+          <div class="member-info text-center">
+            <h4>UI/UX Design Team</h4>
+            <span><i class="bi bi-palette fs-3"></i></span>
+            <p>Our UI/UX Design Team consists of creative designers who craft visually appealing and intuitive user interfaces.</p>
+          </div>
+        </div><!-- End Team Member -->
+  
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="member-img">
+            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+          </div> -->
+          <div class="member-info text-center">
+            <h4>DevOps Team</h4>
+            <span><i class="bi bi-server fs-3"></i></span>
+            <p>Our DevOps Team comprises infrastructure experts who streamline the development process by implementing automation and CI/CD pipelines.</p>
+          </div>
+        </div><!-- End Team Member -->
+  
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="member-img">
+            <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+          </div> -->
+          <div class="member-info text-center">
+            <h4>Testing Team</h4>
+            <span><i class="bi bi-bug fs-3"></i></span>
+            <p>Our Testing Team consists of quality assurance professionals who ensure the reliability and functionality of our products through rigorous testing methodologies.</p>
+          </div>
+        </div><!-- End Team Member -->
+  
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  
+  <!-- End Team Section -->
+
+    
+         
+
+    <!-- Features Section - Home Page -->
+    <section id="features" class="features">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Explore the exceptional features that make us the perfect choice for your needs.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+    
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Empowering Your Business</h3>
+            <p>
+              We provide cutting-edge solutions tailored to your business needs, empowering you to achieve your goals with confidence.
+            </p>
+            <!-- <a href="#" class="btn btn-get-started">Get Started</a> -->
+          </div>
+          <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <div class="image-stack">
+              <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
+              <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+            </div>
+          </div>
+        </div><!-- Features Item -->
+    
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h3>Unparalleled Performance</h3>
+            <p>Experience seamless performance with our state-of-the-art solutions designed to optimize your workflow and maximize productivity.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>Efficient workflow automation for increased efficiency and reduced errors.</span></li>
+              <li><i class="bi bi-check"></i><span>Scalable infrastructure to support your business growth without compromise.</span></li>
+              <li><i class="bi bi-check"></i> <span>Robust security measures to safeguard your valuable data and assets.</span></li>
+            </ul>
+            <!-- <a href="#" class="btn btn-get-started align-self-start">Get Started</a> -->
+          </div>
+        </div><!-- Features Item -->
+    
+      </div>
+    
+    </section>
+    <!-- End Features Section -->
+
+    
+
+    <!-- Pricing Section - Home Page -->
+    
+    <!-- <section id="pricing" class="pricing">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+    
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    
+        <div class="row g-4">
+    
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <div class="icon">
+                <i class="bi bi-box"></i>
+              </div>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4">
+            <div class="pricing-item featured">
+              <h3>Business Plan</h3>
+              <div class="icon">
+                <i class="bi bi-rocket"></i>
+              </div>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
+              </div>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+  -->
+  
+  
+
+    
+    <!-- Call-to-action Section - Home Page -->
+    <!-- Your existing contact form -->
+<div id="contactForm" class="toast">
+  <div class="toast-header">
+    <strong class="me-auto">Contact Us</strong>
+    <button type="button" class="btn-close" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    <form id="contactFormContent">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email ID:</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="contactNumber" class="form-label">Contact Number:</label>
+        <input type="tel" class="form-control" id="contactNumber" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color: rgba(204, 20, 127); border: none;">Submit</button>
+    </form>
+  </div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const callUsButton = document.getElementById('callUsButton');
+  const contactForm = document.getElementById('contactForm');
+
+  // Function to show the contact form
+  function showContactForm() {
+      contactForm.classList.add('show');
+  }
+
+  // Add event listener to the "Call Us Now" button
+  callUsButton.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      showContactForm();
+  });
+
+  // Close the contact form when the close button is clicked
+  contactForm.querySelector('.btn-close').addEventListener('click', function () {
+      contactForm.classList.remove('show');
+  });
+});
+
+</script>
+<!-- Call-to-action section -->
+<section id="call-to-action" class="call-to-action">
+  <img src="assets/img/cta-bg.jpg" alt="">
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h3>Ready to Transform Your Business?</h3>
+          <p>Unlock your business's full potential today. Contact us to discuss how our tailored solutions can drive growth and success.</p>
+          <a id="callUsButton" class="cta-btn" href="#">Leave us a message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    
+    <!-- End Call-to-action Section -->
+
+<!-- Clients Section - Home Page -->
+<section id="clients" class="clients">
+
+  <div class="container-fluid section-title" style="padding-top: 60px;" data-aos="fade-up">
+    <h2>Our Projects</h2>
+    <div class="row gy-4">
+      
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 client-logo">
+        <div class="img-fluid d-flex justify-content-center text-center">
+          <h4>RIDERE</h4>
+        </div>
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 client-logo">
+        <div class="img-fluid d-flex justify-content-center text-center">
+          <h4>99 STORES</h4>
+        </div>
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 client-logo">
+        <div class="img-fluid d-flex justify-content-center text-center">
+          <h4>SCHOOL MANAGEMENT SOFTWARE</h4>
+        </div>
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 client-logo">
+        <div class="img-fluid d-flex justify-content-center text-center">
+          <h4>HRMS</h4>
+        </div>
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 client-logo">
+        <div class="img-fluid d-flex justify-content-center text-center">
+          <h4>MATRIMONIAL APP</h4>
+        </div>
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 client-logo">
+        <div class="img-fluid d-flex justify-content-center text-center">
+          <h4>FOOD DELIVERY APP</h4>
+        </div>
+      </div><!-- End Client Item -->
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- End Clients Section -->
+
+    <!-- Testimonials Section - Home Page -->
+    <section id="testimonials" class="testimonials">
+
+      <div class="container">
+    
+        <div class="row align-items-center">
+    
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+            <h3>Testimonials</h3>
+            <p>
+              Hear what our clients have to say about our services and their experiences working with us.
+            </p>
+          </div>
+    
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+    
+            <div class="swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt=""> -->
+                      <div>
+                        <h3>Srinivas B</h3>
+                        <!-- <h4>CEO and Director of TSB Enterprises</h4> -->
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>The team at Zizmu has been instrumental in revamping our website. Their attention to detail and dedication to customer satisfaction are commendable. Highly recommended!</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt=""> -->
+                      <div>
+                        <h3>M Harishchandran</h3>
+                        <!-- <h4>Founder, BBP Tech</h4> -->
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>We hired Zizmu to develop our mobile app, and they exceeded our expectations. The team's professionalism and expertise ensured a smooth development process and a high-quality end product.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <!-- <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt=""> -->
+                      <div>
+                        <h3>Maheshwaran</h3>
+                        <!-- <h4>CTO, KMR Corporation</h4> -->
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Zizmu's UI/UX team transformed our website, resulting in a significant increase in user engagement and satisfaction. Their creativity and attention to detail are remarkable.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt=""> -->
+                      <div>
+                        <h3>P C </h3>
+                        <!-- <h4>Managing Director, Sudian Technologies</h4> -->
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>Zizmu's DevOps team optimized our infrastructure, resulting in improved performance and reliability. Their proactive approach and expertise have been invaluable to our company.</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- Recent-posts Section - Home Page -->
+    <!-- <section id="recent-posts" class="recent-posts">
+
+     
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Posts</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Politics</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Maria Doe</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jan 1, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Sports</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Allisa Mayer</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Entertainment</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Mark Dower</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 22, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End Recent-posts Section -->
+
+    
+  <!-- faq section -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Welcome to our FAQ section. Here you'll find answers to some common questions about our services.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>What services do you offer?</span></h3>
+                <div class="faq-content">
+                  <p>We offer a variety of services including web development, mobile app development, UI/UX design, and digital marketing.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>How can I request a quote?</span></h3>
+                <div class="faq-content">
+                  <p>To request a quote, simply fill out the contact form on our website or reach out to our sales team via email or phone.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>What is your pricing model?</span></h3>
+                <div class="faq-content">
+                  <p>Our pricing model varies depending on the scope and complexity of the project. We offer both fixed-price and hourly rate options.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Do you provide ongoing support?</span></h3>
+                <div class="faq-content">
+                  <p>Yes, we offer ongoing support and maintenance services to ensure that your website or application continues to perform optimally.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>How long does it take to complete a project?</span></h3>
+                <div class="faq-content">
+                  <p>The timeline for completing a project depends on various factors such as project size, complexity, and client requirements. We'll provide you with an estimated timeline during the initial consultation.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- End Faq Section -->
+
+    <!-- Contact Section - Home Page -->
+    <section id="contact" class="contact">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+<p>Ready to Transform Your Business? Unlock your business's full potential today. Contact us to discuss how our tailored solutions can drive growth and success.</p>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6 text-center">
+            <img src="assets/img/companylogo.png" style="width: 50vb;" alt="" data-aos="fade-in" class="img-fluid">
+            <p data-aos="fade-in">Have a question or need assistance? Feel free to reach out to us via email.</p>
+            <a href="mailto:Info@zizmu.in" class="btn-send-email">Send Email</a>
+          </div><!-- End Contact Form -->
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <style>
+                .info-item {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  height: 100%; /* Make sure each item occupies full height of its container */
+                }
+                
+                .info-item h3, .info-item p {
+                  margin-bottom: 10px; /* Add some spacing between heading and paragraph */
+                }
+              </style>
+              
+              <div class="col-md-6">
+                <div class="info-item text-center" data-aos="fade" data-aos-delay="200">
+                  <a href="https://maps.google.com/?q=Plot+no.27,+F+K+Group,+Road+No.+2,+BNR+Colony,+Venkat+Nagar,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Address</h3>
+                    <p>Plot no.27, F K Group, Road No. 2, BNR Colony, Venkat Nagar, Banjara Hills, Hyderabad, Telangana 500034</p>
+                  </a>
+                </div>
+              </div><!-- End Info Item -->
+              
+              <div class="col-md-6">
+                <div class="info-item text-center" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Phone Number</h3>
+                  <a href="040 46022982"><p>040 46022982</p></a>
+                </div>
+              </div><!-- End Info Item -->
+              
+              <div class="col-md-6">
+                <div class="info-item text-center" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Address</h3>
+                  <p>Info@zizmu.in</p>
+                </div>
+              </div><!-- End Info Item -->
+              
+              <div class="col-md-6">
+                <div class="info-item text-center" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday</p>
+                  <p>09:00AM - 06:00PM</p>
+                </div>
+              </div><!-- End Info Item -->
+              
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- End Contact Section -->
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center m-0">
+            <span style="word-wrap: break-word;"><h4>ZIZMU SOFTWARE SOLUTIONS PRIVATE LIMITED</h4></span>
+          </a>
+          
+          <!-- <p>Plot no.27, F K Group, Road No. 2, BNR Colony, Venkat Nagar, Banjara Hills, Hyderabad, Telangana 500034</p> -->
+          <div class="social-links d-flex">
+            <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+            <a href="https://www.facebook.com/tuitionworld1/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/tuition_world_india/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/tuition-world/?originalSubdomain=in" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="terms-conditions.html">Terms and Conditions</a></li>
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Application Development</a></li>
+            <li><a href="#">UI UX Design and Prototyping</a></li>
+            <li><a href="#">Android Development</a></li>
+            <li><a href="#">Custom Solutions</a></li>
+            <li><a href="#">DevOps</a></li>
+            <li><a href="#">Testing Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <!-- <h4>Contact Us</h4>
+
+          <p>Phone: <span>073373 26804</span></p>
+          <p>Email: <span>info@zizmu.in</span></p> -->
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; 2023 <span>Copyright</span> <strong class="px-1">ZIZMU SOFTWARE SOLUTIONS PVT LTD</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by ZIMZU SOFTWARE SOLUTIONS PVT LTD
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
